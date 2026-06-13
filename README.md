@@ -1,5 +1,6 @@
 #  PitStop : Washroom Mapping & Management System
 **Always a Clean Stop Ahead**
+
 PitStop is a map-based washroom finder that helps users locate clean, safe, and verified washroom facilities across Mumbai and Pune. By partnering with private establishments like cafes, restaurants, and petrol pumps, PitStop provides access to reliable facilities with real-time ratings and reviews.It is a full-stack web application for discovering, rating, and managing public washrooms across Mumbai and Pune.
 
 # Created by
@@ -39,31 +40,48 @@ pitstop/
 
 ---
 
-## ⚡ Quick Setup
+## Getting Started
+## Prerequisites
+- Node.js(v16 or higher)
+- MySQL (v8 or higher)
 
-### 1. Database
+## Installation 
+
+
+### 1. Clone the repository
 ```bash
-mysql -u root -p -e "CREATE DATABASE pitstop;"
-mysql -u root -p pitstop < database_backup_updated.sql
+git clone https://github.com/tanishaacodes/PitStop-.git
+cd PitStop-
 ```
 
-### 2. Environment
-```bash
-cp .env.example .env
-# Fill in your MySQL password in .env
-```
-
-### 3. Install & Run
+### 2. Install dependencies
 ```bash
 npm install
-node index.js
 ```
 
-### 4. Open the App
-Visit **http://localhost:3000** in your browser.
-
-
-
+### 3. Set up the database
+- Open MySQL and create a new database:
+```bash
+CREATE DATABASE pitstop;
+```
+- Import the provided SQL file:
+```bash
+mysql -u root -p pitstop < database_b..._updated.sql
+```
+### 4. Configure environment variables
+Create a .env file in the root directory:
+```bash
+DB_HOST=localhost
+DB_USER=your_mysql_username
+DB_PASSWORD=your_mysql_password
+DB_NAME=pitstop
+```
+### 5. Start the server
+```bash
+node index.js
+```
+### 6.Open the app
+Open index.html directly in your browser, or serve it locally.
 ##  What's in the Database
 
 | Table | Contents |
