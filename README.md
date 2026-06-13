@@ -80,7 +80,7 @@ DB_NAME=pitstop
 ```bash
 node index.js
 ```
-### 6.Open the app
+### 6. Open the app
 Open index.html directly in your browser, or serve it locally.
 ##  What's in the Database
 
