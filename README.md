@@ -95,9 +95,6 @@ Open index.html directly in your browser, or serve it locally.
 
 
 
-
-
-
 ##  Tech Stack
 
 - **Backend:** Node.js, Express 5, mysql2 (pool), dotenv, cors
