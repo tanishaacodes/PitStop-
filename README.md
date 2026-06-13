@@ -1,12 +1,26 @@
-# 🚻 PitStop – Washroom Mapping & Management System
-
+#  PitStop : Washroom Mapping & Management System
 **Always a Clean Stop Ahead**
+PitStop is a map-based washroom finder that helps users locate clean, safe, and verified washroom facilities across Mumbai and Pune. By partnering with private establishments like cafes, restaurants, and petrol pumps, PitStop provides access to reliable facilities with real-time ratings and reviews.It is a full-stack web application for discovering, rating, and managing public washrooms across Mumbai and Pune.
 
-PitStop is a full-stack web application for discovering, rating, and managing public washrooms across Mumbai and Pune.
+# Created by
+- Tanisha Mavle 
+- Praniti Patil
+- Sejal Pawale
 
----
+# Features 
+ - Map View — Interactive map powered by Leaflet.js showing nearby washroom locations
+ - Filters — Filter by city, status (open/closed/maintenance), and partner type
+ - Ratings & Reviews — Rate washrooms on cleanliness, safety, and amenities
+ - Accessibility Info — View wheelchair accessibility and baby-changing station availability
+ - User Profiles — Track your rating history and activity
+ - Authentication — Secure login and signup with password reset support
 
-## 📁 Project Structure
+
+
+
+
+
+## Project Structure
 
 ```
 pitstop/
@@ -48,9 +62,9 @@ node index.js
 ### 4. Open the App
 Visit **http://localhost:3000** in your browser.
 
----
 
-## 🗄️ What's in the Database
+
+##  What's in the Database
 
 | Table | Contents |
 |---|---|
@@ -61,35 +75,14 @@ Visit **http://localhost:3000** in your browser.
 
 **DB trigger** `trg_update_avg_rating` fires after every INSERT into `ratings` and automatically recalculates `washrooms.avg_rating`.
 
----
 
-## 🔌 API Reference
 
-### Washrooms
-| Method | Endpoint | Query params |
-|---|---|---|
-| GET | `/api/washrooms` | `city_id`, `status`, `partner_type`, `accessibility` |
-| GET | `/api/washrooms/:id` | — |
 
-### Ratings
-| Method | Endpoint | Body |
-|---|---|---|
-| GET | `/api/ratings/washroom/:id` | — |
-| POST | `/api/ratings` | `user_id`, `washroom_id`, `cleanliness`, `safety`, `amenities`, `review_text?` |
 
-### Users
-| Method | Endpoint | |
-|---|---|---|
-| POST | `/api/users/register` | `name`, `email`, `password`, `city`, `phone?` |
-| POST | `/api/users/login` | `email`, `password` |
-| POST | `/api/users/forgot-password` | `email`, `newPassword` |
-| GET | `/api/users/:id` | — |
-| GET | `/api/users/:id/activity` | — |
 
----
-
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend:** Node.js, Express 5, mysql2 (pool), dotenv, cors
-- **Frontend:** Vanilla JS, Leaflet.js, Google Fonts (Syne + DM Sans)
+- **Frontend:** JavaScript, Leaflet.js, HTML, CSS 
 - **Database:** MySQL 9.x with trigger for auto avg_rating updates
+  
