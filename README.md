@@ -15,7 +15,7 @@ PitStop is a map-based washroom finder that helps users locate clean, safe, and 
  - Accessibility Info — View wheelchair accessibility and baby-changing station availability
  - User Profiles — Track your rating history and activity
  - Authentication — Secure login and signup with password reset support
- - Low Rating Alerts — Washrooms with an average rating below 2.0 are flagged with a warning badge showing the number of times they've been flagged
+ - Low Rating Alerts — Washrooms with an average rating below 2.0 are flagged with a warning badge showing the number of times they've been flagged before
 
 
 
