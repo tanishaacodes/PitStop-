@@ -66,7 +66,7 @@ CREATE DATABASE pitstop;
 ```
 - Import the provided SQL file:
 ```bash
-mysql -u root -p pitstop < database_b..._updated.sql
+mysql -u root -p pitstop < database_backup_updated.sql
 ```
 ### 4. Configure environment variables
 Create a .env file in the root directory:
@@ -76,6 +76,8 @@ DB_USER=your_mysql_username
 DB_PASSWORD=your_mysql_password
 DB_NAME=pitstop
 ```
+(Create a folder in vscode named routes and add files named washrooms.js, users.js and ratings.js to it)
+
 ### 5. Start the server
 ```bash
 node index.js
